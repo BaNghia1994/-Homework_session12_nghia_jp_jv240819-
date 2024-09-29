@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1 = +prompt("Mời bạn nhập 1 số nguyên thứ 1");
+        let number2 = +prompt("Mời bạn nhập 1 số nguyên thứ 2");
+        let number3 = +prompt("Mời bạn nhập 1 số nguyên thứ 3");
+        function checkEvenOdd(num) {
+            if(num % 2 === 0){
+                return `${num}là số chẵn `;
+            }else{
+                return `${num}là số lẻ `;
+            }
+        }
+        console.log(checkEvenOdd(number1));
+        console.log(checkEvenOdd(number2));
+        console.log(checkEvenOdd(number3));
+    </script>
+    
+</body>
+</html>

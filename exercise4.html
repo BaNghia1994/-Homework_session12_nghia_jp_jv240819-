@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input class="abc" type="text" placeholder="Mời bạn nhập chuỗi bất kỳ">
+        <input class="xyz" type="text" placeholder="Mời bạn nhập một ký tự bất kỳ">
+        <button  onclick="totalAbcxyz()">gửi</button>
+    </div>
+    <script>
+        number = 0
+
+        function totalAbcxyz() {
+            let array = document.getElementsByClassName("abc")[0].value;
+            let string = document.getElementsByClassName("xyz")[0].value;
+
+            let tmp
+            for (let i = 0; i < array.length; i++) {
+                tmp = array[i]
+                for (let j = 0; j < tmp.length; j++) {
+                    if (tmp[j] == string) {
+                        number++
+                    }
+                }
+
+            }
+            console.log(number);
+        }
+
+
+    </script>
+</body>
+
+</html>
